@@ -10,7 +10,6 @@ const {
 
 // Posts Routes
 router.route("/").get(getPosts).post(createPosts);
-
 router.route("/:id").get(getPostsId).put(updatePosts).delete(deletePosts);
 
 module.exports = router;
