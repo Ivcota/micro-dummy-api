@@ -1,8 +1,5 @@
 const { Sequelize, DataTypes } = require("sequelize");
-const sequelize = new Sequelize("dummydatabase", "postgres", "password", {
-  host: "localhost",
-  dialect: "postgres",
-});
+const sequelize = require('../config/db')
 
 const Post = sequelize.define("posts", {
   posts: {
