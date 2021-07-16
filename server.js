@@ -1,10 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
+dotenv.config({ path: "./config/config.env" });
 const postsRoutes = require("./routes/posts");
 const db = require("./config/db");
-
-// dotenv
-dotenv.config({ path: "./config/config.env" });
 
 // Server
 const app = express();
